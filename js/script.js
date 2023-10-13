@@ -1,21 +1,18 @@
 "use strict"
 
-const num = 50;
+let num = 50; 
 
-// (num === 50) ? console.log('Ok') : console.log('False');
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
 
-switch(num) {
-    case 49: 
-        console.log('False');
-        break;
-    case 50:
-        console.log('True');
-        break;
-    case 100:
-        console.log('False!');
-        break;
-    default: 
-        console.log('It was very close');
-        break;
-}
+// do {
+//     console.log(num);
+//     num++;
+// } while (num < 55)
 
+// for(let i = 1; i < 8; i++) {
+//     console.log(num);
+//     num++;
+// }
