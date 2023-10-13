@@ -1,20 +1,21 @@
 "use strict"
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+const num = 50;
+
+// (num === 50) ? console.log('Ok') : console.log('False');
+
+switch(num) {
+    case 49: 
+        console.log('False');
+        break;
+    case 50:
+        console.log('True');
+        break;
+    case 100:
+        console.log('False!');
+        break;
+    default: 
+        console.log('It was very close');
+        break;
 }
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('Насколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('Насколько оцените его?', '');
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
