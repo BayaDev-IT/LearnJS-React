@@ -1,32 +1,27 @@
 "use strict"
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 20;
-}
+const str = 'text';
+console.log(str.length);
+console.log(str.toUpperCase());
 
-showFirstMessage('Hello');
+let fruit = "Some fruit";
 
-function calc (a,b) {
-    return (a+b);
-}
+console.log(fruit.indexOf("fruit"));
 
-console.log(calc(4,3));
+// const logg = "Hello world";
+// console.log(logg.slice(6,11));
+// console.log(logg.substring(6,11));
+// console.log(logg.substr(6,5));
 
-// function declaration
-function ret() {
-    let num = 50;
-    return num;
-}
+const num = 12.2;
+console.log(Math.round(num));
 
-console.log(ret());
+const test = "12.2px";
+// console.log(parseInt(test));
+console.log(parseFloat(test));
 
-// fucntion exprassion
-const logger = function () {
-    console.log('Hello')
-};
 
-logger();
 
-// arrow fucntion
-const culc = (a,b) => { return a+b};
+
+
+
