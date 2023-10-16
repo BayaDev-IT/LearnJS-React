@@ -1,28 +1,45 @@
 "use strict"
-// call back function
 
-function first() {
-    // do something
-    setTimeout(function() {
-        console.log(1);
-    }, 500);
-}
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log("Test");
+    }
+};
 
-function second() {
-    console.log(2);
-}
+options.makeTest();
 
-first();
-second();
+// Диструктирезация
+const {border, bg} = options.options.colors;
 
-// 
-function lesrnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
-}
+console.log(border);
 
-function done() {
-    console.log('Я прошел этот урок');
-}
 
-lesrnJS('JavaScript', done);
+// console.log(Object.keys(options).length);
+
+// console.log(options.name);
+
+// delete options.name;
+// console.log(options);
+
+// let counter = 0;
+
+// for (let key in options) {
+//     if(typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Properties ${i} has the meaning ${options[key][i]}`);
+//         }
+//     } else {
+//         console.log(`Properties ${key} has the meaning ${options[key]}`);
+//         counter++;
+//     }
+// }
+
+// console.log(counter);
+
