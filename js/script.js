@@ -1,45 +1,31 @@
 "use strict"
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log("Test");
-    }
-};
+const arr = [1,12,3,14,5,6];
+arr.sort(compareNum);
+console.log(arr);
 
-options.makeTest();
+function compareNum(a, b) {
+    return a-b;
+}
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`)
+// });
 
-// Диструктирезация
-const {border, bg} = options.options.colors;
+// arr.pop();
+// arr.push(10);
 
-console.log(border);
+// console.log(arr)
 
-
-// console.log(Object.keys(options).length);
-
-// console.log(options.name);
-
-// delete options.name;
-// console.log(options);
-
-// let counter = 0;
-
-// for (let key in options) {
-//     if(typeof(options[key]) === 'object') {
-//         for (let i in options[key]) {
-//             console.log(`Properties ${i} has the meaning ${options[key][i]}`);
-//         }
-//     } else {
-//         console.log(`Properties ${key} has the meaning ${options[key]}`);
-//         counter++;
-//     }
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
 // }
 
-// console.log(counter);
+// for(let value of arr) {
+//     console.log(value);
+// }
 
+
+// const str = prompt('','');
+// const product = str.split(", ");
+// product.sort();
+// console.log(product.join('; '));
